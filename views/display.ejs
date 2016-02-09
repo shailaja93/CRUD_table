@@ -1,0 +1,6 @@
+<a href="/views/view_create"><h3>+Create</h3></a>
+<ol>
+<% user.forEach(function(users) { %>
+<li><a href="view_all/<%= users.id %>"><%= users.username %></a></li>
+<% }); %>    
+</ol>
